@@ -1,0 +1,20 @@
+package clases;
+
+public class Numeros {
+	public int numero1;
+	public int numero2;
+	public int numero3;
+	
+	public int calcularNumeroMenor(){
+		return Math.min(Math.min(numero1, numero2) , numero3);
+	}
+	
+	public int calcularNumeroMayor(){
+		return Math.max(Math.max(numero1, numero2), numero3);
+	}
+	
+	public int calcularNumeroIntermedio(){
+		int menor = calcularNumeroMenor();
+		int mayor = calcularNumeroMayor();
+	}
+}

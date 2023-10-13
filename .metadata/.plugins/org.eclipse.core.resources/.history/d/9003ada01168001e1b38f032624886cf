@@ -1,0 +1,12 @@
+package clases;
+
+public class Numeros {
+	public int numero1;
+	public int numero2;
+	public int numero3;
+	
+	public double calcularNumeroMenor(){
+		Math.min(Math.min(numero1, numero2) , numero3);
+	}
+	
+}

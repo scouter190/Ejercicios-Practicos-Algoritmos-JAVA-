@@ -1,0 +1,19 @@
+package clases;
+
+public class Trabajador {
+	public int codigo;
+	public String nombre; 
+	public int horasTrabajadas;
+	public double tarifaHoraria;
+	
+	public double sBruto(){
+		return horasTrabajadas*tarifaHoraria;
+	}
+	
+	public double calcularDescuento(){
+		double sBruto = sBruto(); 
+		if (sBruto < 4500) {
+			return sBruto;
+		}
+	}
+}

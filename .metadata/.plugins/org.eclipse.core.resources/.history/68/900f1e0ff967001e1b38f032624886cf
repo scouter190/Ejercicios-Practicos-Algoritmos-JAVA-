@@ -1,0 +1,44 @@
+package clases;
+
+public class Trabajador {
+	public int codigo;
+	public String nombre; 
+	public int horasTrabajadas;
+	public double tarifaHoraria;
+	
+	
+	
+	public Trabajador(int codigo, String nombre, int horasTrabajadas, double tarifaHoraria) 
+	
+	{
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.horasTrabajadas = horasTrabajadas;
+		this.tarifaHoraria = tarifaHoraria;
+	
+	}
+
+	public double sBruto(){
+		return horasTrabajadas*tarifaHoraria;
+	}
+	
+	public double calcularDescuento(){
+		
+		double sBruto = sBruto(); 
+		if (sBruto < 4500) {
+			return sBruto * 0.12;
+		}else if (sBruto >=4500 && sBruto<6500){
+			return sBruto * 0.14;
+		}else if (sBruto >=6500){
+			return sBruto * 0.16;
+		}		
+		return sBruto;
+		
+		}
+	
+	public double sNeto(){
+		return sBruto()-calcularDescuento();
+	}
+	
+}

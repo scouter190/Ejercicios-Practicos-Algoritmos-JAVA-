@@ -1,0 +1,28 @@
+package clases;
+
+public class Caja {
+	
+	public double largoCentimetros;
+	public double anchoCentimetros;
+	public double altoCentimetros;
+	public double pesoBalanzaKilogramos;
+	
+	public Caja(double largoCentimetros, double anchoCentimetros, double altoCentimetros,
+			double pesoBalanzaKilogramos) {
+		super();
+		this.largoCentimetros = largoCentimetros;
+		this.anchoCentimetros = anchoCentimetros;
+		this.altoCentimetros = altoCentimetros;
+		this.pesoBalanzaKilogramos = pesoBalanzaKilogramos;
+	}
+	
+	public double calcularVolumen(){
+		return largoCentimetros * anchoCentimetros * altoCentimetros;
+	}
+	
+	public double calcularPeso(){
+		return (calcularVolumen()/5000);
+	}
+	
+	
+}

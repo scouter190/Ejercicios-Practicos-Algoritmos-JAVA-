@@ -1,0 +1,75 @@
+package intrfc;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import clases.*;
+import javax.swing.JButton;
+import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class intrfc extends JFrame {
+
+	private JPanel contentPane;
+	private JTextArea txtS;
+	private JButton btnProcesar;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					intrfc frame = new intrfc();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public intrfc() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 512, 382);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		btnProcesar = new JButton("Procesar");
+		btnProcesar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				procesar();
+			}
+		});
+		btnProcesar.setBounds(10, 11, 89, 23);
+		contentPane.add(btnProcesar);
+		
+		txtS = new JTextArea();
+		txtS.setBounds(10, 45, 476, 287);
+		contentPane.add(txtS);
+	}
+	
+	void procesar(){
+		
+		Expositor e1 = new Expositor(15, "cesar", 10, 15);
+		
+		txtS.setText("cod: " + e1.codigo);
+		txtS.append("afp " + e1.calcularDescuentoAFP());
+		txtS.append("eps" + e1.calcularDescuentoEPS());
+		txtS.append("s neto" + e1.calcularSueldoNeto());
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="Persona"/>
+<fullyQualifiedTypeName name="clases.Persona"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="clases.Trabajador"/>
+<fullyQualifiedTypeName name="clases.Filmacion"/>
+<fullyQualifiedTypeName name="clases.Coordinador"/>
+<fullyQualifiedTypeName name="clases.Expositor"/>
+<fullyQualifiedTypeName name="javax.print.Doc"/>
+<fullyQualifiedTypeName name="clases.Docente"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="clases.Numeros"/>
+</qualifiedTypeNameHistroy>

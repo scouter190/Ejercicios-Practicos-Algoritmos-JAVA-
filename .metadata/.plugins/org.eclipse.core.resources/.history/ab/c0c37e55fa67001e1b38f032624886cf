@@ -1,0 +1,13 @@
+package clases;
+
+public class Filmacion {
+	public int codigo;
+	public String titulo;
+	public int duracionMinutos;
+	public int precioSoles;
+	
+	public double precioDolares(){
+		return (duracionMinutos * precioSoles) *3.38; 
+	}
+	
+}

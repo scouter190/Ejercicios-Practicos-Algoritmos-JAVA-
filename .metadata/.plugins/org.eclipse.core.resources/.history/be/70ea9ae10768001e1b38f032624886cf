@@ -1,0 +1,27 @@
+package clases;
+
+public class Coordinador {
+	public int codigo;
+	public String nombre;
+	public int categoria;
+	public int celular;
+	public Coordinador(int codigo, String nombre, int categoria, int celular) {
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.categoria = categoria;
+		this.celular = celular;
+	}
+	
+	public double calcularSueldo(){
+		switch (categoria) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+	
+}
